@@ -11,19 +11,14 @@ public class BallController : MonoBehaviour {
 	//ゲームオーバを表示するテキスト
 	private GameObject gameoverText;
 
-
 	// Use this for initialization
 	void Start () {
-
 		//シーン中のGameOverTextオブジェクトを取得
-		this.gameoverText = GameObject.Find ("GameOverText");
+		this.gameoverText = GameObject.Find("GameOverText");
 	}
 
-
-	
 	// Update is called once per frame
 	void Update () {
-	
 		//ボールが画面外に出た場合
 		if (this.transform.position.z < this.visiblePosZ) {
 			//GameoverTextにゲームオーバを表示
